@@ -1,6 +1,6 @@
 {
   "name": "snowpack-plugin-imagemin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jaredLunde/snowpack-plugin-imagemin#readme",
   "repository": "github:jaredLunde/snowpack-plugin-imagemin",
   "bugs": "https://github.com/jaredLunde/snowpack-plugin-imagemin/issues",
@@ -8,11 +8,12 @@
   "license": "MIT",
   "description": "Use imagemin to optimize your images in Snowpack",
   "keywords": [
-    "snowpack plugin imagemin"
+    "snowpack plugin imagemin",
+    "snowpack plugin",
+    "imagemin"
   ],
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
-  "unpkg": "dist/umd/snowpack-plugin-imagemin.js",
   "source": "src/index.ts",
   "types": "types/index.d.ts",
   "exports": {
@@ -20,7 +21,6 @@
       "browser": "./dist/module/index.js",
       "import": "./dist/esm/index.mjs",
       "require": "./dist/main/index.js",
-      "umd": "./dist/umd/snowpack-plugin-imagemin.js",
       "source": "./src/index.ts",
       "types": "./types/index.d.ts",
       "default": "./dist/main/index.js"
@@ -126,6 +126,9 @@
     "standard-version": "latest",
     "typescript": "latest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/imagemin": "^7.0.0",
+    "imagemin": "^7.0.1"
+  },
   "peerDependencies": {}
 }
